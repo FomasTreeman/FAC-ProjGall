@@ -5,7 +5,8 @@ body {
 }
 
 body {
-    background-image: linear-gradient(117deg, rgba(80,222,125,1) 0%, rgba(0,86,255,1) 100%);;
+    background-image: linear-gradient(117deg, rgba(80, 222, 125, 1) 0%, rgba(0, 86, 255, 1) 100%);
+    ;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
@@ -48,6 +49,7 @@ div {
     padding: 0%;
 }
 
+
 .card {
     position: relative;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -72,4 +74,13 @@ div {
     align-self: center;
     justify-self: center;
     opacity: 80%;
+}
+
+@media (max-width: 800px) {
+    .cardContainer {
+        flex-direction: column;
+    }
+    .card {
+        width: 90vw;
+    }
 }
